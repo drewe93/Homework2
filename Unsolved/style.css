@@ -1,0 +1,113 @@
+body{
+    height:100vh;
+    background: #333333;
+    
+}
+header{
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 20px;
+    font-family: "Oswald";
+}
+
+h2{
+    color: white;
+    font-size: 20px;
+    font-family: "Sonsie One";
+}
+
+p{
+    font-family: "EB Garamond"
+}
+main{
+    
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 2px;
+}
+section{
+    
+    background: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.text{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+div{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.image{
+    border-top: 1px dotted #333333;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.arch{
+    display: none;
+}
+
+.sand{
+    display: none;
+}
+
+.bridge{
+    display: none;
+}
+
+.camera{
+    display: none;
+}
+
+@media only screen and (min-width: 600px){
+body{
+    height:100vh;
+    width:100vh;
+    overflow: hidden;
+}
+
+main{
+    padding: 100px;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 2px;
+}
+
+.arch{
+    display: grid;
+}
+
+.sand{
+    display: grid;
+}
+
+.bridge{
+    display: grid;
+}
+
+.camera{
+    display: grid;
+}
+}
